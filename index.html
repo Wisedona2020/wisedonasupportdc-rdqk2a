@@ -23,9 +23,54 @@
 pointer" ; display:block; onclick="openNav()">&#9776
 </span>
 
+<div id="app">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d"
+  />
 
+  <section id="event-details-container">
+    <h1>wisedona2020</h1>
+
+    <p><i class="material-icons">calendar_today</i> October 30</p>
+    <p><i class="material-icons">location_city</i>Achimota New Station </p>
+    <button id="startRsvp">Get started </button>
+    <button >Show Account </button>
+    
+  </section>
+
+  <hr />
+
+  <section id="firebaseui-auth-container"></section>
+
+  <section id="description-container">
+    <h2>What we'll be doing</h2>
+    <p>Join us for a day full of Firebase Workshops and Pizza!</p>
+
+    <p id="number-attending"></p>
+  </section>
+
+  <section id="guestbook-container">
+    <h2>Are you attending?</h2>
+    <button id="rsvp-yes">Yes</button>
+    <button id="rsvp-no">No</button>
+
+    <h2>Discussion</h2>
+
+    <form id="leave-message">
+      <label>Leave a message: </label>
+      <input type="text" id="message" />
+      <button type="submit">
+        <i class="material-icons">send</i>
+        <span>Send</span>
+      </button>
+    </form>
+
+    <section id="guestbook"></section>
+  </section>
+</div>
 
 <h1> work hard to make goals come true </h1>
-<script src="index.js"></script>
+<script type="module" src="index.js"></script>
+<script src="script.js"></script>
   </body>
 </html>
